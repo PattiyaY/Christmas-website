@@ -19,8 +19,7 @@
   width: 100%;
 }
 
-.display {
-  display: flex;
+.welcomeText {
   margin-left: 150px;
   font-size: 60px;
   color: whitesmoke;

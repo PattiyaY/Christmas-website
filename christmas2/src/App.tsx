@@ -7,13 +7,13 @@ function App() {
     <div className="App">
       <div className="navbar"></div>
       <form className="appForm">
-        <div className="display">
+        <div className="welcomeText">
           <Typewriter
             options={{
               autoStart: true,
               loop: true,
               delay: 30,
-              strings: ["Merry C h r i s t m a s!", "HO HO HO!"],
+              strings: ["Merry Christmas!", "HO HO HO!"],
             }}
           />
         </div>
