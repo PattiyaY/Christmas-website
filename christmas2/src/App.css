@@ -1,0 +1,27 @@
+@media (min-width: 600px) {
+  .appForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.appForm {
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.display {
+  display: flex;
+  margin-left: 150px;
+  font-size: 60px;
+  color: whitesmoke;
+}
