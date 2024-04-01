@@ -3,29 +3,52 @@ import "./App.css";
 import Typewriter from "typewriter-effect";
 import cartoonGirl from "./img/Cartoon-girl.png";
 import cartoonBoy from "./img/Cartoon-boy.png";
+import tree from "./img/tree.png";
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
-      <div className="navbar">
-        <img className="image" src={cartoonGirl} alt="girl-cartoon" />
+      <div className="navbarContainer">
+        <div className="bg">
+          <img className="tree" src={tree} alt="tree-cartoon" />
+        </div>
 
-        <img className="image" src={cartoonBoy} alt="boy-cartoon" />
+        <div className="cartoon">
+          <img className="image" src={cartoonGirl} alt="girl-cartoon" />
+          <img className="image" src={cartoonBoy} alt="boy-cartoon" />
+        </div>
       </div>
+
       <form className="appForm">
         <div className="welcomeText">
           <Typewriter
             options={{
               autoStart: true,
               loop: true,
-              delay: 30,
+              delay: 60,
               strings: ["Merry Christmas!", "HO HO HO!"],
             }}
           />
+
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+              delay: 60,
+              strings: ["Click a gift box!", "Down here!"],
+            }}
+          />
+        </div>
+
+        <div className="buttons">
+          <button className="buttonHome">Click me!</button>
+          <button className="buttonHome">Click me!</button>
+          <button className="buttonHome">Click me!</button>
+          <button className="buttonHome">Click me!</button>
         </div>
       </form>
     </div>
   );
 }
 
-export default App;
+export default HomePage;
