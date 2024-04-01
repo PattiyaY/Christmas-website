@@ -17,10 +17,41 @@
   left: 0;
   top: 0;
   width: 100%;
+  display: flex;
+  grid-auto-columns: minmax(30%, auto);
+  grid-template-rows: repeat(30%, auto);
 }
 
 .welcomeText {
   margin-left: 150px;
   font-size: 60px;
   color: whitesmoke;
+}
+
+.image {
+  width: 30%;
+  height: 30%;
+  margin-top: -100px;
+  margin-left: -200px;
+  animation-name: cartoon;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cartoon {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
