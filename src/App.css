@@ -11,6 +11,27 @@
   }
 }
 
+@media (max-width: 600px) {
+  .welcomeText {
+    /* Adjust font size for smaller screens */
+    font-size: 30px;
+    /* Center text horizontally */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image {
+    /* Adjust image size for smaller screens */
+    width: 50%;
+    height: 30%;
+  }
+
+  .appForm {
+    /* Reduce margin for better content fit */
+    margin-top: 150px;
+  }
+}
+
 .navbarContainer {
   position: fixed;
   left: 0px;
@@ -18,19 +39,20 @@
 }
 
 .bg {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 0px;
   z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: -150px;
 }
 
 .tree {
-  width: 70%;
+  width: 80%;
   height: auto;
-  margin-top: -300px;
+  margin-top: auto;
 }
 
 .cartoon {
@@ -60,8 +82,7 @@
 
 .image {
   width: 30%;
-  height: 30%;
-  margin-top: -100px;
+  height: 20%;
   animation-name: cartoon;
   animation-duration: 10s;
   animation-iteration-count: infinite;
