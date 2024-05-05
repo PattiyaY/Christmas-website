@@ -29,15 +29,6 @@ function HomePage() {
               strings: ["Merry Christmas!", "HO HO HO!"],
             }}
           />
-
-          <Typewriter
-            options={{
-              autoStart: true,
-              loop: true,
-              delay: 60,
-              strings: ["Click a gift box!", "Down here!"],
-            }}
-          />
         </div>
 
         <div className="buttons">
